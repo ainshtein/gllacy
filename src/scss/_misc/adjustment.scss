@@ -1,5 +1,5 @@
 // ----- adjustment vars ----- //
-$container-width: 960px;
+$container-width: 900px;
 
 
 /* ----- adjustment styles ----- */
@@ -15,20 +15,24 @@ html {
 }
 body {
   min-width: $container-width;
-  font-size: 17px;
-  line-height: 1.06;
+  font-size: 16px;
+  line-height: 1.375;
   -webkit-font-smoothing: antialiased;
-  color: black;
-  @include cuprum;
+  color: $white;
+  @include roboto;
   font-weight: 400;
   font-style: normal;
-  text-transform: uppercase;
-  background-color: #ffffff;
+  background-color: $green;
+}
+.content-wrapper {
+  width: $container-width;
+  margin: 0 auto;
+  padding: 0 20px;
 }
 .container {
   width: $container-width;
   margin: 0 auto;
-  padding: 0 10px;
+  padding: 0 20px;
 }
 
 // on screen - hidden, in accessibility tree - visible
